@@ -1,0 +1,58 @@
+/* Farbcodes
+
+primary color: #05003D
+secondary color: #FFFFFF
+
+*/
+
+body {
+    background-color: #040059;
+    color: white;
+    font-family: 'Calibri', 'Arial';
+    margin: 0;
+    text-align: center;
+}
+
+.myNavbar {
+    background-color: #030029;
+    color: white;
+  }
+  .myNavbar .navbar-brand {
+    color: white;
+  }
+  .myNavbar .navbar-nav .nav-link {
+    color: white;
+  }
+  .myNavbar .navbar-nav .nav-item {
+    margin-left: 15px;
+  }
+  .myNavbar .social-media {
+    margin-left: auto;
+  }
+  .myNavbar .navbar-nav {
+    flex-direction: row;
+  }
+  
+  .myBtn {
+    background-color: #040059;
+    border-color: #040059;
+  }
+  
+  .myBtn:hover {
+    background-color: #030029;
+    border-color: #030029;
+  }
+
+  .myCard {
+    color: black;
+  }
+  
+  .myCardGroup {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .myFinances {
+    color: white;
+  }
+

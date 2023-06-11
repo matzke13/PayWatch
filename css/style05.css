@@ -1,0 +1,28 @@
+/* FUER ERROR SEITE */
+
+body {
+  background-color: #040059;
+  color: white;
+  font-family: "Calibri", "Arial";
+  margin: 20px;
+}
+
+.error-container {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+}
+
+.myBtn {
+  background-color: #040059;
+  border-color: #040059;
+}
+
+.myBtn:hover {
+  background-color: #030029;
+  border-color: #030029;
+}

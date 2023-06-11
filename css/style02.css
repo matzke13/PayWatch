@@ -1,0 +1,49 @@
+/* CSS Login, Passwort und Registrierungsseite */
+
+.login-form {
+    width: 350px;
+    margin: 50px auto;
+    font-size: 15px;
+  }
+
+  .login-form form {
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px black;
+    padding: 30px;
+    color: black;
+  }
+
+  .login-form h1 {
+    color: white;
+  }
+
+  .login-form h2 {
+    font-size: 24px;
+    margin: 0 0 15px;
+  }
+
+  .formControl, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+  }
+
+  .btn {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  img {
+    width: 50px;
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PayWatch</title>
   <link rel="stylesheet" href="./css/style04.css">
+  <link rel="stylesheet" href="./css/indexBtn.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
   <style>
     body, html {
@@ -43,6 +44,37 @@
     .myRightContainer {
       color: white;
     }
+
+    button {
+    background-color: transparent;
+    color: white;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1em 2em;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+    -webkit-box-shadow: 0 0 0 0 white;
+            box-shadow: 0 0 0 0 white;
+  }
+  
+  button:hover {
+    -webkit-transform: translateY(-4px) translateX(-2px);
+        -ms-transform: translateY(-4px) translateX(-2px);
+            transform: translateY(-4px) translateX(-2px);
+    -webkit-box-shadow: 2px 5px 0 0 white;
+            box-shadow: 2px 5px 0 0 white;
+  };
+  
+  button:active {
+    -webkit-transform: translateY(2px) translateX(1px);
+        -ms-transform: translateY(2px) translateX(1px);
+            transform: translateY(2px) translateX(1px);
+    -webkit-box-shadow: 0 0 0 0 white;
+            box-shadow: 0 0 0 0 white;
+  }
   </style>
 </head>
 
@@ -88,7 +120,7 @@
       <h5>Entdecke noch heute die Welt der Finanzen</h5>
     </div>
     <div class="myTextAtIndex">
-      <button type="button" class="btn btn-light" onclick="window.location.href = './registrieren.html';">Jetzt loslegen!</button>
+      <button type="button" class="" onclick="window.location.href = './registrieren.html';">Jetzt loslegen!</button>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>

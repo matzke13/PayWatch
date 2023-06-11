@@ -1,0 +1,29 @@
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  
+  .alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+  }
+  
+  /* Weitere Alert-Klassen können hier hinzugefügt werden */
+  
+  .alert-primary strong {
+    font-weight: bold;
+  }
+  
+  .alert-primary::before {
+    content: "\f0eb";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+  }
+  
+  /* Falls du das Font Awesome Symbol verwenden möchtest, vergiss nicht, die entsprechende Font Awesome CSS-Datei einzubinden */
+  
+  

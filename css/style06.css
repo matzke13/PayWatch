@@ -1,0 +1,12 @@
+.diagramm {
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    color: white;
+}
+

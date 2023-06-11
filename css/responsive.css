@@ -1,0 +1,42 @@
+/* Responsive CSS-Stylesheet */
+
+@media (max-width: 767px) {
+    #medien {
+      display: none;
+    }
+  
+    .card-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+      margin: 20px auto;
+    }
+    
+    .myCardGroup {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .navbar-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .nav-item {
+      flex: 1;
+      text-align: center;
+    }
+  
+    #zitat {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  
