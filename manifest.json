@@ -1,8 +1,8 @@
 {
     "name": "PayWatch",
     "short_name": "PayWatch",
-    "theme_color": "#000000",
-    "background_color": "#000000",
+    "theme_color": "#030029",
+    "background_color": "#030029",
     "display": "fullScreen",
     "orientation": "portrait",
     "scope": "/",
