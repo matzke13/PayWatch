@@ -36,6 +36,11 @@ var einnahmenChart = new Chart(ctxEinnahmen, {
         }]
     },
     options: {
+        legend: {
+            labels: {
+                fontColor: 'white'
+            }
+        },
         responsive: true,
         title: {
             display: true,
@@ -110,7 +115,7 @@ var ausgabenChart = new Chart(ctxAusgaben, {
     }
 });
 
-// Funktion zum Generieren von Hintergrundfarben für das Chart
+// Generieren von Hintergrundfarben
 function generateColors(count) {
     var colors = [
         "#0000FF", // Blau
@@ -127,18 +132,24 @@ function generateColors(count) {
     return colors.slice(0, count);
 }
 
-// Funktion zum Hinzufügen einer Ausgabe
+// Hinzufügen einer Ausgabe
 function addAusgabe() {
     var kategorie = prompt('Geben Sie die Kategorie der Ausgabe ein:');
-    var beschreibung = (prompt('Geben Sie die Beschreibung ein:'));
+    var beschreibung = prompt('Geben Sie die Beschreibung ein:');
     var preis = parseFloat(prompt('Geben Sie den Preis der Ausgabe ein:'));
     var datum = prompt('Geben Sie das Datum der Ausgabe ein:');
+
+    if (kategorie === null || beschreibung === null || isNaN(preis) || datum === null) {
+        return; // Beendet die Funktion, wenn eine der Eingaben null ist oder der Preis keine gültige Zahl ist
+    }
+
     var ausgabe = {
         kategorie: kategorie,
         beschreibung: beschreibung,
         preis: -preis,
         datum: datum
     };
+
     ausgabenliste.push(ausgabe);
     transaktionen.push(ausgabe);
     localStorage.setItem('transactions_list', JSON.stringify(transaktionen));
@@ -146,21 +157,35 @@ function addAusgabe() {
     location.reload();
 }
 
-// Funktion zum Hinzufügen einer Einnahme
+// Hinzufügen einer Einnahme
 function addEinnahme() {
     var kategorie = prompt('Geben Sie die Kategorie der Einnahme ein:');
-    var beschreibung = (prompt('Geben Sie die Beschreibung ein:'));
+    var beschreibung = prompt('Geben Sie die Beschreibung ein:');
     var preis = parseFloat(prompt('Geben Sie den Preis der Einnahme ein:'));
     var datum = prompt('Geben Sie das Datum der Einnahme ein:');
+
+    if (kategorie === null || beschreibung === null || isNaN(preis) || datum === null) {
+        return; // Beendet die Funktion, wenn eine der Eingaben null ist oder der Preis keine gültige Zahl ist
+    }
+
     var einnahme = {
         kategorie: kategorie,
         beschreibung: beschreibung,
         preis: preis,
         datum: datum
     };
+
     einnahmenliste.push(einnahme);
     transaktionen.push(einnahme);
     localStorage.setItem('transactions_list', JSON.stringify(transaktionen));
     einnahmenChart.update(); // Chart aktualisieren
     location.reload();
 }
+
+document.getElementById("buttonEinzahlen").addEventListener("click", function() {
+    location.reload();
+});
+
+document.getElementById("buttonNeuerKauf").addEventListener("click", function() {
+    location.reload();
+});

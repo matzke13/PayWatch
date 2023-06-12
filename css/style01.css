@@ -1,3 +1,5 @@
+
+
 /* Farbcodes
 
 primary color: #05003D
@@ -8,7 +10,6 @@ secondary color: #FFFFFF
 body {
     background-color: #040059;
     color: white;
-    font-family: 'Calibri', 'Arial';
     margin: 0;
     text-align: center;
 }
