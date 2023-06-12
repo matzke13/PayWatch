@@ -2,7 +2,7 @@
     "name": "PayWatch",
     "short_name": "PayWatch",
     "theme_color": "#030029",
-    "background_color": "#030029",
+    "background_color": "#040059",
     "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
