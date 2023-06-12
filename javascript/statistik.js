@@ -20,7 +20,7 @@ transaktionen.forEach(element => {
 //IMPORT ENDE
 
 
-// Einnahmen-Kreisdiagramm erstellen
+//Einnahmen-Kreisdiagramm erstellen
 var ctxEinnahmen = document.getElementById('einnahmendiagramm').getContext('2d');
 var einnahmenChart = new Chart(ctxEinnahmen, {
     type: 'pie',
@@ -61,7 +61,7 @@ var einnahmenChart = new Chart(ctxEinnahmen, {
                 }
             },
             datalabels: {
-                color: 'white', // Schriftfarbe auf Weiß setzen
+                color: 'white',
                 font: {
                     weight: 'bold'
                 }
@@ -106,7 +106,7 @@ var ausgabenChart = new Chart(ctxAusgaben, {
                 }
             },
             datalabels: {
-                color: 'white', // Schriftfarbe auf Weiß setzen
+                color: 'white',
                 font: {
                     weight: 'bold'
                 }
@@ -118,16 +118,16 @@ var ausgabenChart = new Chart(ctxAusgaben, {
 // Generieren von Hintergrundfarben
 function generateColors(count) {
     var colors = [
-        "#0000FF", // Blau
-        "#6495ED", // Kornblumenblau
-        "#1E90FF", // Dodger-Blau
-        "#4169E1", // Königsblau
-        "#00008B", // Dunkelblau
-        "#0000CD", // Mittelblau
-        "#191970", // Marineblau
-        "#87CEEB", // Himmelblau
-        "#4682B4", // Stahlblau
-        "#ADD8E6" // Hellblau
+        "#0000FF", //Blau
+        "#6495ED", //Kornblumenblau
+        "#1E90FF", //Dodger-Blau
+        "#4169E1", //Königsblau
+        "#00008B", //Dunkelblau
+        "#0000CD", //Mittelblau
+        "#191970", //Marineblau
+        "#87CEEB", //Himmelblau
+        "#4682B4", //Stahlblau
+        "#ADD8E6" //Hellblau
       ];
     return colors.slice(0, count);
 }
@@ -140,7 +140,7 @@ function addAusgabe() {
     var datum = prompt('Geben Sie das Datum der Ausgabe ein:');
 
     if (kategorie === null || beschreibung === null || isNaN(preis) || datum === null) {
-        return; // Beendet die Funktion, wenn eine der Eingaben null ist oder der Preis keine gültige Zahl ist
+        return; 
     }
 
     var ausgabe = {
@@ -153,11 +153,11 @@ function addAusgabe() {
     ausgabenliste.push(ausgabe);
     transaktionen.push(ausgabe);
     localStorage.setItem('transactions_list', JSON.stringify(transaktionen));
-    ausgabenChart.update(); // Chart aktualisieren
+    ausgabenChart.update(); 
     location.reload();
 }
 
-// Hinzufügen einer Einnahme
+//Hinzufügen einer Einnahme
 function addEinnahme() {
     var kategorie = prompt('Geben Sie die Kategorie der Einnahme ein:');
     var beschreibung = prompt('Geben Sie die Beschreibung ein:');
@@ -165,7 +165,7 @@ function addEinnahme() {
     var datum = prompt('Geben Sie das Datum der Einnahme ein:');
 
     if (kategorie === null || beschreibung === null || isNaN(preis) || datum === null) {
-        return; // Beendet die Funktion, wenn eine der Eingaben null ist oder der Preis keine gültige Zahl ist
+        return;
     }
 
     var einnahme = {
@@ -178,7 +178,7 @@ function addEinnahme() {
     einnahmenliste.push(einnahme);
     transaktionen.push(einnahme);
     localStorage.setItem('transactions_list', JSON.stringify(transaktionen));
-    einnahmenChart.update(); // Chart aktualisieren
+    einnahmenChart.update(); 
     location.reload();
 }
 

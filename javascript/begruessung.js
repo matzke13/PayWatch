@@ -46,8 +46,6 @@ var zitate = [
   // Zufällig ein Zitat auswählen
   var randomIndex = Math.floor(Math.random() * zitate.length);
   var ausgewaehltesZitat = zitate[randomIndex];
-  
-  // H2-Element mit der ID "zitat" auswählen und das Zitat einfügen
   var zitatElement = document.getElementById('zitat');
   zitatElement.textContent = ausgewaehltesZitat;
   

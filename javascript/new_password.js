@@ -21,7 +21,6 @@ document.getElementById("new-password-form").addEventListener("submit", function
     userData.repeat_password = new_password;
     localStorage.setItem('userData', JSON.stringify(userData));
 
-    // Weiterleitung auf die Startseite
     window.location.href = "./index.html";
 
 });

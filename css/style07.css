@@ -1,0 +1,70 @@
+body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    .fullscreen-image {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      background-image: url('../img/blaue-skyline.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      font-size: 30px;
+    }
+
+    .content {
+      background-color: #040059;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .arrow {
+      color: white;
+    }
+
+    .myLeftContainer {
+      color: white;
+    }
+
+    .myRightContainer {
+      color: white;
+    }
+
+    button {
+      background-color: transparent;
+      color: white;
+      border-radius: 10em;
+      font-size: 17px;
+      font-weight: 600;
+      padding: 1em 2em;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      border: 1px solid white;
+      -webkit-box-shadow: 0 0 0 0 white;
+      box-shadow: 0 0 0 0 white;
+    }
+
+    button:hover {
+      -webkit-transform: translateY(-4px) translateX(-2px);
+      -ms-transform: translateY(-4px) translateX(-2px);
+      transform: translateY(-4px) translateX(-2px);
+      -webkit-box-shadow: 2px 5px 0 0 white;
+      box-shadow: 2px 5px 0 0 white;
+    }
+
+    ;
+
+    button:active {
+      -webkit-transform: translateY(2px) translateX(1px);
+      -ms-transform: translateY(2px) translateX(1px);
+      transform: translateY(2px) translateX(1px);
+      -webkit-box-shadow: 0 0 0 0 white;
+      box-shadow: 0 0 0 0 white;
+    }

@@ -54,9 +54,9 @@ function isEmailUnique(email)
         const userData = JSON.parse(userDataJson);
         if (userData.email === email) 
         {
-            return false; // E-Mail ist bereits vorhanden
+            return false; 
         }
     }
-    return true; // E-Mail ist einzigartig
+    return true; 
 }
 

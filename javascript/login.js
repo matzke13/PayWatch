@@ -10,7 +10,6 @@ const usernameORemail_js = document.getElementById("usernameORemail").value;
 const password_js = document.getElementById("password").value;
 
 if (userData.password === password_js && userData.username || userData.email === usernameORemail_js) {
-    // Weiterleitung auf die neue Seite
     window.location.href = "./start.html";
 } 
 else if (usernameORemail_js != usernameORemail) {
